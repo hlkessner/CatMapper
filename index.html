@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CatMapper</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   
+    <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.css" />
+    <!-- <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" /> -->
+    <link rel="stylesheet" href="main.css"/>
+  </head>
+  <body>
+    <h1>CatMapper</h1>
+      <div id="mapid"></div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#welcome" aria-controls="home" role="tab" data-toggle="tab">About CatMapper</a></li>
+    <li role="presentation"><a href="#adoption" aria-controls="profile" role="tab" data-toggle="tab">Why Adoption</a></li>
+    <li role="presentation"><a href="#picking" aria-controls="messages" role="tab" data-toggle="tab">Picking the Right Cat</a></li>
+    <li role="presentation"><a href="#tips" aria-controls="messages" role="tab" data-toggle="tab">Bringing your Cat Home</a></li>
+  </ul>
+<div class="tab-content">
+         <div role="tabpanel" class="tab-pane active" id="welcome">
+           <h2>Welcome to CatMapper!</h2>
+           <p>Cat mapper is the easiest way to find your new best friend! Simply click on a shelter near you to browse adoptable cats. The only hard                    thing about it is finding the perfect cat for you!</p>
+          </div>
+        
+      <div role="tabpanel" class="tab-pane" id="adoption">
+          <h2>Why Adoption?</h2>
+          <p>You've decided to welcome a new pet in your home? Shelters and rescue groups have a wide selection of animals looking for new homes, from                cats and dogs to birds, rabbits and small animals. Here are great reasons to adopt your new best friend:</p>
+
+          <h3>Adoption helps stop pet overpopulation</h3>
+
+          <p>There are too many animals and not enough homes. Shelters have been facing a pet overpopulation problem for the last few decades. Some                  animals are found wandering as strays, and some are surrendered by their owners who cannot, or no longer want to, care for them. In order                to help reduce pet overpopulation and being part of the solution, it’s important to have your pet sterilized, which is the only permanent,              100-percent effective method of birth control. In most shelters, spaying or neutering is mandatory for all adopted cats, dogs and rabbits.              This ensures the animals placed in the community don’t contribute to pet overpopulation.</p>
+
+          <h3>Adoption saves lives</h3>
+
+          <p>Shelters are overcrowded. Adoption will not only save the life of the pet you are adopting but will also make room and free up precious                  resources for another animal that the shelter will take in. Adopting an animal from a shelter is the best way to help the shelter continue              its work. Shelters are meant to only house animals temporarily, and in order to be able to help more animals in need, shelters must find                loving adoptive homes for the animals they take in.</p>
+
+          <h3>Adoption gives a second chance</h3>
+
+          <p>Shelters are full of healthy, sweet and smart animals who were surrendered not because of their behavior but generally due to the issues of              their guardians. The most common reasons animals are surrendered is because of a change in circumstances of their family: a divorce, a                  move, a new baby or because their family was not ready for all the responsibilities of having a pet and “no longer has time for them”.                  Shelters and rescue groups offer adoptable dogs, cats and many other animals of all ages, breeds, mixes and sizes.</p>
+
+          <h3>Adoption often costs less</h3>
+
+          <p>Pets adopted from shelters and rescue groups usually cost less than pets purchased or even obtained for free. Once you include the cost of              vaccinations, spay/neuter surgery, microchip, deworming treatment and health guarantee, you’ll be surprised what a good deal an adopted pet              really is! Also, did you know that more than 25% of cats and dogs who enter into shelters are pure breeds? If you’re truly set on a                      specific purebred cat or dog, there are breed-specific rescues that work to match up the right owner with the perfect purebred pet.</p>
+
+          <p>Help us stop the number of abandoned animals. Adopting from a shelter is an act of rescue and love. It is a good deed for you, for the                  shelter, but especially for the animal who needs you. Added to the pleasure of having a new companion, you’ll be happy to be the one who                was able to offer him a second chance.</p>
+          <p>Source: Why Adopt Instead of Buying a Pet. SPCA. <a href= http://www.spca.com/?page_id></a></p>
+        </div>
+      
+        <div role="tabpanel" class="tab-pane" id="picking">
+          <h2>Picking a Cat</h2>
+         <p>Start with a few ideas of the temperament of the cat you would like. Do you want a lap cat? One who will say hi when you get home but is                 content to be by himself most of the time? Do a little preparation before you visit the shelter so you know what you are looking for.</p>
+         <p>How much time to you have to dedicate to your new cat? Kittens have a lot of energy, and need a lot of time and attention. They need a lot               of interactive playtime, and will need some training (where it is okay to climb and claw, and where it is not; most cats instinctively know             how to use the litter box). Adult cats tend to not need quite so much dedicated playtime or training, but will still want some of your love             and attention. If you lead a very busy lifestyle, a young kitten may not be the best choice for you right now.</p>
+          <p>Do you have kids? What ages are they? Keep in mind that small children (especially those who have not been around animals before) may not                know how to handle a cat, especially a small kitten. Consider waiting until your children are old enough to understand how to touch and pet              a cat, or consider getting an older cat who may be more tolerant of children than a kitten might be.</p>
+          <p>When you get to the shelter, take a quick walk through the cat room before stopping to visit with any one cat. See how each cat reacts to                you walking by, and pay attention to those who seem to be interested in meeting you. Keep in mind, cats can sleep up to 17 hours a day, so              don’t rule out that cute one taking a cat nap in the corner.</p>
+          <p>Go back and have a short visit (through the door) with any cats who you think you are interested in. Watch for them to come up to the door              and try to smell you or rub their faces or bodies on the door. Ask the shelter staff to wake up that cute little one so you can meet her,                too. </p>
+          <p>If the shelter has the space, spend a few minutes in a quiet place alone with each cat that you are interested in. How this interaction                  goes will be very different based on each cat’s personality. For some cats, the more you try to get their attention the more they will                  ignore you. For other cats, the more you ignore them the more they will want your attention! Remember, most of these cats want more love                and attention than they get every day, so they should be interested in meeting you. Do give them some time to warm up to you, as many cats              are cautious around new people.</p>
+          <p>See how the cat reacts to being petted. If the cat tries to bite or swat at you after being petted just a few times, this may not be the                cat for you (especially if you have small children).</p>
+          <p>Try picking up the cat to see how she tolerates that. Some cats enjoy being picked up and held; these will often be good lap cats. Some                  cats do not like being picked up, and that is okay, depending on how the cat’s other behaviors mesh with what you are looking for. If the                 cat gets frantic and tries to claw at you to get down, this may not be the right cat for you.</p>
+          <p>If you have kids, bring them along on the shelter visit to see how the cat interacts with them (or bring them back when you have already                narrowed your choices down to 1 or 2 cats). You are looking for a cat who seems patient around kids, is interested in being around them,                but will move away when they get overwhelmed by the attention (rather than trying to bite or claw to get away).</p>
+          <p>Ask lots of questions, anything you can think of! Ask how long the cat has been in the shelter, if they know why he was surrendered there,               if he has a favorite person or other cat there, his medical history, what his normal behaviors are, and if the shelter employees have any               concerns about adopting this cat (in general, or with your family in particular). The only silly question is the one you don’t ask, so                    don’t be shy!</p>
+          <p>
+            Source: 10 Tips to Choose the Right Shelter Cat, Princeton Veternary Hospital <a href=http://princetonvet.net/10-tips-to-choose-the-right-shelter-cat></a></p>
+          </p>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="tips">
+          <h2>Post Adoption Tips</h2>
+          <h3>Before You Bring Your Cat Home: </h3>
+
+          <p> Cats are territorial, and coming into a new home leaves them feeling really uneasy. There’s all that unexplored space, and who knows what               may lurk there. Do him a favor and provide a small area to call his own for the first few days or weeks. A bathroom or laundry room works               well. Furnish the room with cat amenities, such as food, water and a litter box. You’ll want to spend time with your cat, so make sure                   there’s a comfortable place for you to sit as well.</p>
+          <p>Fill a litter box with one or two inches of litter and place it in his room where he can use it undisturbed. After all, everyone deserves a              modicum of privacy when pottying, and giving him that will help forestall litter box aversion. </p>
+          <p>Set up a feeding station with food and water bowls. Locate it away from the litter box. For more cat feeding and nutrition tips, visit our              Pet Nutrition section.</p>
+          <p>Cats love to get away from it all in small places, and you can provide one for your new cat as his own little safe haven. If he came home                in a cat carrier, that might be a good choice. You can also make one by cutting a doorway for her in the end of a box. If you prefer, you                can buy a covered cat bed at a pet supply store. In either case, make sure the space is big enough for the cat to stand up and turn around              in. Cat “feng shui” probably requires that he or she be able to see the door to the room from his hidey hole, so he won’t be startled.</p>
+          <p>A cat’s claws need to be worn down, and they do this by scratching on things. Since you prefer that it not be your chairs and sofa, provide              your cat with a socially acceptable scratching place. Some types are made of corrugated cardboard and lie on the floor; others are posts                which have to be tall enough so that the cat can extend himself upward to scratch. You can encourage your cat (once he has arrived) to use              the post by sprinkling it with catnip or dangling a toy at the top. He’ll get the idea. You’ll probably want a scratching post in each room              where there is soft furniture, perhaps blocking access to it. You can also install sticky tape (available at pet supply stores) to corners              of upholstered furniture to dissuade scratching. </p>
+          <p>Look at your house with a curious cat’s eye view for its climbing and exploring potential. When your cat is acclimated to your home, you                may be surprised to find him on top of the upper kitchen cabinets, so make sure there’s nothing on display there or on other high shelves                that can be damaged or knocked off.</p>
+          <p>Look for holes or registers that leave ductwork accessible and cover them up. A kitten can easily slither into one of these. You won’t want              firemen in the house, jackhammering the concrete floor to extract your cat.</p>
+          <p>If possible, buy a cat tree for your new family member. Cats like to survey their territory, so a high perch is often a favored resting                  place.</p>
+          <p>If there are other human family members, go over the ground rules about your new pet. Remind them not to startle him and to keep the door                to his room shut.</p>
+          <p>Bone up on how to introduce your cat to other pets. Keep her door closed and don’t let your other pet race in unexpectedly. See also: New                Cat Introductions and Living with Cats and Dogs.</p>
+          <h3>First Day:</h3>
+
+          <p>Now, you are ready for your cat’s homecoming. Preferably, bring her home in a cat carrier. It will feel safer to her. She has seen a lot of              excitement, so take her directly to her new room. (Make sure the toilet lid is down, if she’s to acclimate in your bathroom.) Ideally, you              would restrict her exposure to the whole family, but naturally, everyone is going to want to see her. Remind them of the ground rules                    you’ve set up.</p>
+
+          <p>Sit on the floor and let her come to you. Don’t force her. Just let her get acquainted on her own time. If she doesn’t approach, leave her              alone and try again later. Some cats are particularly frightened, and she may retreat to her hidey hole and not come out when you’re around              at all. She may only come out at night when the house is quiet. Give her time.</p>
+          <p>Your newly adopted cat may not eat much or at all at first. It’s best to give your cat the same food she had at the shelter or in her                    foster home, at least at first. Keeping some things familiar will make her feel more secure. Be sure to change her water frequently and                  make sure that she is drinking. If your cat hasn’t eaten for a few days, call your vet to ask for advice.</p>
+          <h3>Following Weeks:</h3>
+
+          <p>It may take your cat a week or two to adjust. Be patient.</p>
+
+          <p>Within a week of being adopted, take your newly adopted cat for her first wellness visit with a veterinarian. If you have a record of                    immunizations from the shelter, take it with you. Don’t have a vet? Check out these tips for finding the right vet for you and your cat.
+            As your cat adjusts, she’ll show signs that she wants to explore outside her safe haven. Make sure other pets or family members won’t                    startle her while she gradually expands her territory. She may be ready to play, so you can furnish some toys. Many cats like feather wands              from the pet supply store, but homemade toys are often favored. A wad of a tissue paper to bat around or a paper bag to hide in can be fun.           </p>
+          <p>Congratulations! If you follow these tips, you’ll be on your way to having a well-adjusted feline family member.</p>
+          <p>
+            Source: Tips for the First 30 Days of Cat Adoption by Petfinder. <a href="https://www.petfinder.com/cats/bringing-a-cat-home/tips-for-first-30-days-cat/"></a></p>
+          </div>
+     <footer>
+       
+       <ul class="social-links">
+                <li class="twitter"><a href="http://twitter.com"><img src="/img/twitter.png"></a></li>
+                <li class="facebook"><a href="http://facebook.com"><img src="/img/facebook.png"</a></li>
+                <li class="instagram"><a href="http://instagram.com"><img src="/img/instagram.png"</a></li>
+            </ul>
+    </footer>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+  <script src="main.js"></script>
+  </body>
+</html>

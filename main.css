@@ -1,0 +1,52 @@
+body {
+  margin-left: 100px; 
+  margin-right: 100px; 
+}
+#mapid { 
+  height: 400px; 
+  border: 1px;
+
+}
+
+img {
+  height: 50px;
+  margin-right: 130px; 
+  margin-top: 10px; 
+  
+}
+li {
+  display: inline;
+}
+footer {
+  border: 2px solid; 
+  text-align: center;
+}
+/* Media queries */
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  footer {
+    position: fixed; 
+    width: 100%;
+  }
+
+}
