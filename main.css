@@ -48,5 +48,8 @@ footer {
     position: fixed; 
     width: 100%;
   }
+  body {
+    margin: 0px; 
+  }
 
 }
