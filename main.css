@@ -1,13 +1,21 @@
 body {
-  margin-left: 100px; 
-  margin-right: 100px; 
+  margin-left: 150px; 
+  margin-right: 150px; 
+  background-color: rgba(255, 162, 153, 1);
 }
 #mapid { 
-  height: 400px; 
+  height: 500px; 
   border: 1px;
 
 }
-
+.logo {
+  height: 200px; 
+  margin: auto;
+  padding: 0px; 
+}
+.tab-content {
+  background-color: white; 
+}
 img {
   height: 50px;
   margin-right: 130px; 
@@ -49,7 +57,7 @@ footer {
     width: 100%;
   }
   body {
-    margin: 0px; 
+    margin: none;
   }
 
 }
