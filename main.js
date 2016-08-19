@@ -33,7 +33,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/hlkessner/cirr7avti0009gbm2595xkzw
 
 // mymap.on('locationerror', onLocationError);
 
- var url = 'http://api.petfinder.com/pet.getRandom?key=12ca8a73b3b4a51797988576ecfd5ebc&shelterid=WA119&output=full&format=json';
+ var url = 'http://api.petfinder.com/pet.getRandom?key=12ca8a73b3b4a51797988576ecfd5ebc&shelterid=WA59&output=full&format=json';
     $.ajax({
         type : 'GET',
         data : {},
@@ -46,7 +46,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/hlkessner/cirr7avti0009gbm2595xkzw
             var petfinder = data.petfinder;
             var infoHTML = '<ul>';
             infoHTML += '<li>';
-            infoHTML += '<strong>Description</strong><br>';
+            //infoHTML += '<strong>Description</strong><br>';
             infoHTML += petfinder.pet.description.$t;
             infoHTML += '</li>';
 
@@ -58,13 +58,13 @@ L.tileLayer('https://api.mapbox.com/styles/v1/hlkessner/cirr7avti0009gbm2595xkzw
             infoHTML += '</li>';
 
             infoHTML += '<li>';
-            infoHTML += '<strong>shelterId</strong><br>';
+            //infoHTML += '<strong>shelterId</strong><br>';
             infoHTML += petfinder.pet.shelterId['$t'];
             infoHTML += '</li>';
             infoHTML += '<li>';
-            infoHTML += '<strong>Images WITH SIZE</strong><br>';
+            //infoHTML += '<strong>Images WITH SIZE</strong><br>';
             $.each(petfinder.pet.media.photos.photo, function(i, image){
-                if(image['@size'] == 'x' && image['@id'] == '1'){
+                if(image['@size'] == 'x' && image['@id'] === '1'){
                     infoHTML += '<img src="'+image['$t']+'" />';
                 }
 
@@ -72,7 +72,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/hlkessner/cirr7avti0009gbm2595xkzw
             infoHTML += '</li>';
 
             infoHTML += '<li>';
-            infoHTML += '<strong>Images</strong><br>';
+            //infoHTML += '<strong>Images</strong><br>';
             $.each(petfinder.pet.media.photos.photo, function(i, image){
                 infoHTML += '<img src="'+image['$t']+'" />';
 
