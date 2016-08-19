@@ -31,11 +31,15 @@ L.tileLayer('https://api.mapbox.com/styles/v1/hlkessner/cirr7avti0009gbm2595xkzw
 // }
 
 // mymap.on('locationerror', onLocationError);
+
+
+
+
 //shelters
 //Kitty Harbor
 
 var harborMarker = L.marker ([47.572180, -122.370493]).addTo(mymap);
-harborMarker.bindPopup("<b>Kitty Harbor</b>").openPopup();
+harborMarker.bindPopup("<b>Kitty Harbor</b><br>Location: 3422 Harbor Ave. SW<br>Seattle, WA 98126<br>Hours: Saturday & Sunday 12:00-4:00<br>http://www.kittyharborseattle.org/").openPopup();
 //Seattle Animal Shelter
 var shelterMarker = L.marker ([47.638236, -122.376523]).addTo(mymap);
 shelterMarker.bindPopup("<b>Seattle Animal Shelter</b>").openPopup();
@@ -54,66 +58,4 @@ meowMarker.bindPopup("<b>Meow Cat Rescue</b>").openPopup();
 //Seattle Humaine
 var humaineMarker = L.marker ([47.580950, -122.163706]).addTo(mymap);
 humaineMarker.bindPopup("<b>Seattle Humaine</b>").openPopup();
-
-var url = 'http://api.petfinder.com/pet.getRandom?key=12ca8a73b3b4a51797988576ecfd5ebc&shelterid=WA538&output=full&format=json';
-    $.ajax({
-        type : 'GET',
-        data : {},
-        url : url+'&callback=?' ,
-        dataType: 'json',
-        success : function(data) {              
-            // stores result
-            var result = '';
-
-            var petfinder = data.petfinder;
-            var infoHTML = '<ul>';
-            infoHTML += '<li>';
-            //infoHTML += '<strong>Description</strong><br>';
-            infoHTML += petfinder.pet.description['.t'];
-            infoHTML += '</li>';
-
-            infoHTML += '<li>';
-            //infoHTML += '<strong>Breed</strong><br>';
-            $.each(petfinder.pet.breeds.breed, function(i, breed){
-                infoHTML += '<p>'+ breed['.t'] + '</p>';
-            });
-            infoHTML += '</li>';
-
-            infoHTML += '<li>';
-            //infoHTML += '<strong>shelterId</strong><br>';
-            //infoHTML += petfinder.pet.shelterId['$t'];
-            infoHTML += '</li>';
-            infoHTML += '<li>';
-            //infoHTML += '<strong>Images WITH SIZE</strong><br>';
-            $.each(petfinder.pet.media.photos.photo, function(i, image){
-                if(image['@size'] == 'x' && image['@id'] == '1'){
-                    infoHTML += '<img src="'+image['.t']+'" />';
-                }
-
-            });
-            infoHTML += '</li>';
-
-            infoHTML += '<li>';
-            //infoHTML += '<strong>Images</strong><br>';
-            $.each(petfinder.pet.media.photos.photo, function(i, image){
-                infoHTML += '<img src="'+image['.t']+'" />';
-
-            });
-            infoHTML += '</li>';
-
-            infoHTML += '</ul>';
-            // return infoHTML;
-            $('#petfinderInfo').html(infoHTML);
-
-            // $('#petfinderInfo').html(petfinder.pet.description['$t']);
-            // 
-            console.log(petfinder);
-        },
-        error : function(request,error)
-        {
-            alert("Request: "+JSON.stringify(request));
-        }
-    });
-
-
 
