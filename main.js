@@ -59,7 +59,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/hlkessner/cirr7avti0009gbm2595xkzw
 
             infoHTML += '<li>';
             //infoHTML += '<strong>shelterId</strong><br>';
-            infoHTML += petfinder.pet.shelterId['$t'];
+            //infoHTML += petfinder.pet.shelterId['$t'];
             infoHTML += '</li>';
             infoHTML += '<li>';
             //infoHTML += '<strong>Images WITH SIZE</strong><br>';
@@ -99,13 +99,13 @@ L.tileLayer('https://api.mapbox.com/styles/v1/hlkessner/cirr7avti0009gbm2595xkzw
 //Kitty Harbor
 
 var harborMarker = L.marker ([47.572180, -122.370493]).addTo(mymap);
-harborMarker.bindPopup("<b>Kitty Harbor</b><br>Location: 3422 Harbor Ave. SW<br>Seattle, WA 98126<br>Hours: Saturday & Sunday 12:00-4:00<br>http://www.kittyharborseattle.org/").openPopup();
+harborMarker.bindPopup("<b>Kitty Harbor</b><br>3422 Harbor Ave. SW<br>Seattle, WA 98126<br>Hours: Saturday & Sunday 12:00-4:00<br>http://www.kittyharborseattle.org/").openPopup();
 //Seattle Animal Shelter
 var shelterMarker = L.marker ([47.638236, -122.376523]).addTo(mymap);
-shelterMarker.bindPopup("<b>Seattle Animal Shelter</b>").openPopup();
+shelterMarker.bindPopup("<b>Seattle Animal Shelter</b><br>2061 15th Ave W<br>Seattle, WA 98119<br> Tuesday-Sunday 12:00-6:00<br>http://www.seattle.gov/animalshelter>").openPopup();
 //PAWS Cat City
 var pawsMarker = L.marker ([47.666603, -122.317106]).addTo(mymap);
-pawsMarker.bindPopup("<b>P.A.W.S Cat City</b>").openPopup();
+pawsMarker.bindPopup("<b>P.A.W.S Cat City</b><br>5200 Roosevelt Way NE, Suite B<br>Seattle, WA 98105<br>Monday-Friday 11:00-6:00<br>Saturday & Sunday 11:00-5:00<br>Closed on Tuesdays<br>https://www.paws.org/cats-and-dogs/shelter/").openPopup();
   //Emerald City Pet Rescue
 var emeraldMarker = L.marker ([47.575794, -122.333167]).addTo(mymap);
 emeraldMarker.bindPopup("<b>Emerald City Pet Rescue</b>").openPopup();

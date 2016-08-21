@@ -16,14 +16,12 @@ body {
 .tab-content {
   background-color: white; 
 }
-img {
-  height: 50px;
-  margin-right: 130px; 
-  margin-top: 10px; 
+
   
-}
+
 li {
   display: inline;
+ 
 }
 footer {
   border: 2px solid; 
