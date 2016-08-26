@@ -1,8 +1,35 @@
+
+
 body {
   margin-left: 150px; 
   margin-right: 150px; 
   background-color: rgba(255, 162, 153, 1);
+  font-family: 'Farsan', cursive;
 }
+p {
+  font-size: 25px; 
+  margin-left: 30px; 
+  margin-right: 30px;
+  
+}
+h2 {
+  font-size: 30px; 
+  font-style: bold; 
+  margin-right: 30px; 
+  margin-left: 30px; 
+}
+h3 {
+  font-size: 27px; 
+  margin-left: 30px; 
+  margin-right: 30px; 
+}
+button {
+  border-radius: 12px;
+  padding: 14px 40px;
+  background-color: rgba(255, 229, 112, 1);
+  font-size: 20px; 
+}
+
 #mapid { 
   height: 500px; 
   border: 1px;
@@ -11,18 +38,22 @@ body {
 .logo {
   height: 200px; 
   margin: auto;
-  padding: 0px; 
+  padding: 0px;
+  align-items: center;
 }
 .tab-content {
   background-color: white; 
+
 }
 
   
 
 li {
   display: inline;
+  font-size: 25px; 
  
 }
+
 footer {
   border: 2px solid; 
   text-align: center;
@@ -55,7 +86,7 @@ footer {
     width: 100%;
   }
   body {
-    margin: none;
+    margin: 1px;
   }
 
 }

@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,14 +24,23 @@
 
     <!-- <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" /> -->
     <link rel="stylesheet" href="main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Farsan" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   </head>
   <body>
     <div role="header">
-    <img src= "img/cat mapper.png" class=logo>
+      <!-- Logo image -->
+      <p style="text-align:center"><img src= "img/cat mapper.png" class=logo></p>
     </div>
+     <button onclick="alert('Cat mapper is the easiest way to find your new best friend! Simply click on a shelter near you to browse adoptable cats. The only hard thing about it is finding the perfect cat for you!')">Welcome to CatMapper</button>
+    </div>
+      <!--Map -->
       <div id="mapid"></div>
   
     </div>
+   <div class="welcome">
+    
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
     <li role="presentation" class="active"><a href="#welcome" aria-controls="home" role="tab" data-toggle="tab">About CatMapper</a></li>
@@ -40,8 +50,7 @@
   </ul>
 <div class="tab-content">
          <div role="tabpanel" class="tab-pane active" id="welcome">
-           <h2>Welcome to CatMapper!</h2>
-           <p>Cat mapper is the easiest way to find your new best friend! Simply click on a shelter near you to browse adoptable cats. The only hard                    thing about it is finding the perfect cat for you!</p>
+           
             <h2>Featured Cat!</h2>
            <div id="petfinderInfo">
            </div>
@@ -68,7 +77,7 @@
           <p>Pets adopted from shelters and rescue groups usually cost less than pets purchased or even obtained for free. Once you include the cost of              vaccinations, spay/neuter surgery, microchip, deworming treatment and health guarantee, you’ll be surprised what a good deal an adopted pet              really is! Also, did you know that more than 25% of cats and dogs who enter into shelters are pure breeds? If you’re truly set on a                      specific purebred cat or dog, there are breed-specific rescues that work to match up the right owner with the perfect purebred pet.</p>
 
           <p>Help us stop the number of abandoned animals. Adopting from a shelter is an act of rescue and love. It is a good deed for you, for the                  shelter, but especially for the animal who needs you. Added to the pleasure of having a new companion, you’ll be happy to be the one who                was able to offer him a second chance.</p>
-          <p>Source: Why Adopt Instead of Buying a Pet. SPCA. <a href= http://www.spca.com/?page_id></a></p>
+          <p>Source: <a href= http://www.spca.com/?page_id>Why Adopt Instead of Buying a Pet. SPCA</a></p>
         </div>
       
         <div role="tabpanel" class="tab-pane" id="picking">
@@ -84,7 +93,7 @@
           <p>If you have kids, bring them along on the shelter visit to see how the cat interacts with them (or bring them back when you have already                narrowed your choices down to 1 or 2 cats). You are looking for a cat who seems patient around kids, is interested in being around them,                but will move away when they get overwhelmed by the attention (rather than trying to bite or claw to get away).</p>
           <p>Ask lots of questions, anything you can think of! Ask how long the cat has been in the shelter, if they know why he was surrendered there,               if he has a favorite person or other cat there, his medical history, what his normal behaviors are, and if the shelter employees have any               concerns about adopting this cat (in general, or with your family in particular). The only silly question is the one you don’t ask, so                    don’t be shy!</p>
           <p>
-            Source: 10 Tips to Choose the Right Shelter Cat, Princeton Veternary Hospital <a href=http://princetonvet.net/10-tips-to-choose-the-right-shelter-cat></a></p>
+            Source:  <a href=http://princetonvet.net/10-tips-to-choose-the-right-shelter-cat>10 Tips to Choose the Right Shelter Cat, Princeton Veternary Hospital</a></p>
           </p>
         </div>
         <div role="tabpanel" class="tab-pane" id="tips">
@@ -115,17 +124,17 @@
             As your cat adjusts, she’ll show signs that she wants to explore outside her safe haven. Make sure other pets or family members won’t                    startle her while she gradually expands her territory. She may be ready to play, so you can furnish some toys. Many cats like feather wands              from the pet supply store, but homemade toys are often favored. A wad of a tissue paper to bat around or a paper bag to hide in can be fun.           </p>
           <p>Congratulations! If you follow these tips, you’ll be on your way to having a well-adjusted feline family member.</p>
           <p>
-            Source: Tips for the First 30 Days of Cat Adoption by Petfinder. <a href="https://www.petfinder.com/cats/bringing-a-cat-home/tips-for-first-30-days-cat/"></a></p>
+            Source:  <a href="https://www.petfinder.com/cats/bringing-a-cat-home/tips-for-first-30-days-cat/">Tips for the First 30 Days of Cat Adoption by Petfinder.</a></p>
           </div>
-    
+   
 
      <footer>
        <!-- Social Links -->
        
           <ul class="social-links">
-                <li class="twitter"><img src="img/twitter.png" style="width:100px"><a href="http://twitter.com"></a></li>
-                <li class="facebook"><img src="img/facebook.png" style="width:100px"><a href="http://facebook.com"></a></li>
-                <li class="instagram"><img src="img/instagram.png" style="width:100px"><a href="http://instagram.com"></a></li>
+                <li class="twitter"><img src="img/twitter.png" style="width:75px"><a href="http://twitter.com"></a></li>
+                <li class="facebook"><img src="img/facebook.png" style="width:75px"><a href="http://facebook.com"></a></li>
+                <li class="instagram"><img src="img/instagram.png" style="width:75px"><a href="http://instagram.com"></a></li>
             </ul>
     </footer>
         </div>
